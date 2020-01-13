@@ -10,6 +10,7 @@ BRH:0
 end_of_record
 TN:
 SF:./src/Foo.js
+DA:2,1
 FN:1,f1
 FN:4,fn2
 FN:7,fn3
