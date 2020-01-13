@@ -83,6 +83,9 @@ CoverageFile.prototype.toString = function () {
   var header = 'SF:' + this.filename + '\n'
   var footer = 'end_of_record\n'
 
+  this.DARecords = this.DARecords.sort(function (a, b) { return a - b; })
+  this.BRDARecords = this.BRDARecords.sort(function (a, b) { return a - b; })
+
   var body = this.DARecords.map(function (daRecord) {
     return daRecord.toString()
   }).join('')
